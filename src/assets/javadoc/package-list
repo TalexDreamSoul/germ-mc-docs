@@ -1,0 +1,15 @@
+com.germ.germplugin.api
+com.germ.germplugin.api.command
+com.germ.germplugin.api.condition
+com.germ.germplugin.api.dynamic
+com.germ.germplugin.api.dynamic.animation
+com.germ.germplugin.api.dynamic.effect
+com.germ.germplugin.api.dynamic.entity
+com.germ.germplugin.api.dynamic.gui
+com.germ.germplugin.api.dynamic.item
+com.germ.germplugin.api.event
+com.germ.germplugin.api.event.gui
+com.germ.germplugin.api.handle
+com.germ.germplugin.api.util
+com.germ.germplugin.api.verify
+com.germ.germplugin.api.yaml

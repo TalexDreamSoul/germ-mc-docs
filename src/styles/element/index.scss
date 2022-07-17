@@ -1,0 +1,131 @@
+// styles/element/index.scss
+/* 只需要重写你需要的即可 */
+@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+  $colors: (
+    'primary': (
+      'base': #0288d1,
+    ),
+  ),
+);
+
+@use "element-plus/theme-chalk/src/index.scss" as *;
+
+//@media (prefers-color-scheme: dark) {
+//
+//  body {
+//
+//    --border-color: #363636;
+//    --shadow-color: #262626;
+//    --text-color: #ffffff;
+//    --text-sub-color: rgba(235, 235, 235, .85);
+//    --bg-color: #1a1a1a;
+//    --bg-sub-color: rgba(33, 33, 33, 0.7);
+//
+//  }
+//
+//  .Logo-Container {
+//
+//    filter: brightness(120%);
+//
+//  }
+//
+//}
+
+.dark-mode {
+
+  --border-color: #363636;
+  --shadow-color: #262626;
+  --text-color: #ffffff;
+  --text-sub-color: rgba(235, 235, 235, .85);
+  --bg-color: #1a1a1a;
+  --bg-sub-color: rgba(33, 33, 33, .85);
+
+}
+
+
+
+// 如果只是按需导入，则可以忽略以下内容。
+// 如果你想导入所有样式:
+// @use "element-plus/theme-chalk/src/index.scss" as *;
+
+body {
+  position: absolute;
+
+  margin: 0;
+
+  height: 100%;
+  width: 100%;
+
+  text-align: center;
+  overflow-x: hidden;
+
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  --border-color: #e7e7e7;
+  --shadow-color: #eee;
+  --text-color: #000;
+  --text-sub-color: rgba(20, 20, 20, .85);
+  --bg-color: #fff;
+  --bg-sub-color: rgba(250, 250, 250, .85);
+
+}
+
+.url-clicker {
+  position: relative;
+  margin: 0 3px;
+
+  color: var(--text-sub-color);
+  cursor: pointer;
+  transition: all .25s;
+
+  &:hover {
+
+    opacity: .7;
+
+  }
+}
+.beta-version {
+  position: relative;
+
+  padding: 2px 4px;
+
+  border-radius: 4px;
+  background-color: #d52b2a;
+
+}
+
+.hljs-section {
+
+  color: #b14342 !important;
+
+}
+
+.ps .ps__rail-x:hover, .ps .ps__rail-y:hover, .ps .ps__rail-x:focus, .ps .ps__rail-y:focus, .ps .ps__rail-x.ps--clicking, .ps .ps__rail-y.ps--clicking {
+
+  background-color: var(--bg-sub-color) !important;
+
+}
+
+.el-overlay {
+
+  .el-message-box {
+
+    .el-message-box__btns .el-button {
+
+      background-color: var(--bg-color);
+      border: var(--bg-color);
+      border-color: var(--bg-color);
+      //color: var(--text-color);
+
+    }
+
+    --el-messagebox-content-color: var(--text-color);
+    --el-border-color-lighter: var(--bg-sub-color);
+    --el-bg-color: var(--bg-sub-color);
+
+  }
+
+  backdrop-filter: saturate(180%) brightness(200%) blur(3px);
+
+}
